@@ -22,9 +22,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Acts.NextPrevLayout,
+		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Behaviors.Platform.Acts.SetVectorY,
 		C3.Behaviors.Platform.Exps.JumpStrength,
@@ -132,12 +132,17 @@ self.C3_JsPropNameTable = [
 	{WaitForThePlatformAndAvoidThePinkBallsTheyKill: 0},
 	{EntradaDeTexto: 0},
 	{TextoAgradecimento: 0},
+	{Verde: 0},
+	{Verde2: 0},
 	{PontosColetados: 0},
 	{PontosNecessarios: 0},
 	{isMuted: 0},
 	{PontosColetados2: 0},
 	{PontosNecessarios2: 0},
-	{isMuted2: 0}
+	{isMuted2: 0},
+	{PontosColetados3: 0},
+	{PontosNecessarios3: 0},
+	{isMuted3: 0}
 ];
 
 self.InstanceType = {
@@ -204,5 +209,7 @@ self.InstanceType = {
 	checkpoint: class extends self.ISpriteInstance {},
 	WaitForThePlatformAndAvoidThePinkBallsTheyKill: class extends self.ISpriteInstance {},
 	EntradaDeTexto: class extends self.ITextInputInstance {},
-	TextoAgradecimento: class extends self.ITextInstance {}
+	TextoAgradecimento: class extends self.ITextInstance {},
+	Verde: class extends self.ISpriteInstance {},
+	Verde2: class extends self.ISpriteInstance {}
 }
