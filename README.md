@@ -1,6 +1,5 @@
 ========================
 BOUND
-========================
 
 Bound é um jogo de estilo clássico onde o jogador controla
 uma bolinha que salta por obstáculos desafiadores.
